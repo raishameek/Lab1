@@ -14,12 +14,12 @@ cv2.imshow('Grayscale Image', gray_img)
 cv2.waitKey(0)
 
 # 4. Image Resizing
-resized_img = cv2.resize(img, (400, 400))  # Resize to 400x400
+resized_img = cv2.resize(img, (400, 400))  
 cv2.imshow('Resized Image', resized_img)
 cv2.waitKey(0)
 
 # 5. Image Cropping
-cropped_img = img[100:300, 100:300]  # Crop a region (y1:y2, x1:x2)
+cropped_img = img[100:300, 100:300]  
 cv2.imshow('Cropped Image', cropped_img)
 cv2.waitKey(0)
 
@@ -79,8 +79,8 @@ cv2.waitKey(0)
 
 # 15. Drawing on an Image (Rectangle & Circle)
 img_copy = img.copy()
-cv2.rectangle(img_copy, (50, 50), (200, 200), (255, 0, 0), 2)  # Draw Rectangle
-cv2.circle(img_copy, (300, 300), 50, (0, 255, 0), 2)  # Draw Circle
+cv2.rectangle(img_copy, (50, 50), (200, 200), (255, 0, 0), 2)  
+cv2.circle(img_copy, (300, 300), 50, (0, 255, 0), 2)  
 cv2.imshow('Drawing on Image', img_copy)
 cv2.waitKey(0)
 
